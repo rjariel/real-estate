@@ -1,0 +1,259 @@
+{
+  "key": "group_properties_details",
+  "title": "Property Details",
+  "fields": [
+    {
+      "key": "field_property_price",
+      "label": "Property Price",
+      "name": "property_price",
+      "type": "number",
+      "instructions": "Enter price as a number (e.g., 350000)",
+      "required": 0,
+      "wrapper": {
+        "width": "33.33"
+      },
+      "min": 0,
+      "step": 1000
+    },
+    {
+      "key": "field_property_price_label",
+      "label": "Price Display Label",
+      "name": "property_price_label",
+      "type": "text",
+      "instructions": "E.g., \"Starting from\", \"Price reduced\", \"Contact for price\"",
+      "required": 0,
+      "wrapper": {
+        "width": "33.33"
+      },
+      "placeholder": "Starting from"
+    },
+    {
+      "key": "field_property_status",
+      "label": "Status",
+      "name": "property_status",
+      "type": "select",
+      "instructions": "Property listing status",
+      "required": 0,
+      "wrapper": {
+        "width": "33.33"
+      },
+      "choices": {
+        "available": "Available",
+        "pending": "Pending",
+        "sold": "Sold",
+        "rented": "Rented"
+      },
+      "default_value": "available",
+      "return_format": "value"
+    },
+    {
+      "key": "field_property_address",
+      "label": "Full Address",
+      "name": "property_address",
+      "type": "textarea",
+      "instructions": "Complete property address",
+      "required": 0,
+      "wrapper": {
+        "width": "100"
+      },
+      "rows": 2,
+      "new_lines": ""
+    },
+    {
+      "key": "field_property_city",
+      "label": "City",
+      "name": "property_city",
+      "type": "text",
+      "required": 0,
+      "wrapper": {
+        "width": "33.33"
+      }
+    },
+    {
+      "key": "field_property_state",
+      "label": "State/Province",
+      "name": "property_state",
+      "type": "text",
+      "required": 0,
+      "wrapper": {
+        "width": "33.33"
+      }
+    },
+    {
+      "key": "field_property_zipcode",
+      "label": "Zip/Postal Code",
+      "name": "property_zipcode",
+      "type": "text",
+      "required": 0,
+      "wrapper": {
+        "width": "33.33"
+      }
+    },
+    {
+      "key": "field_property_bedrooms",
+      "label": "Bedrooms",
+      "name": "property_bedrooms",
+      "type": "number",
+      "required": 0,
+      "wrapper": {
+        "width": "25"
+      },
+      "min": 0,
+      "step": 1
+    },
+    {
+      "key": "field_property_bathrooms",
+      "label": "Bathrooms",
+      "name": "property_bathrooms",
+      "type": "number",
+      "required": 0,
+      "wrapper": {
+        "width": "25"
+      },
+      "min": 0,
+      "step": 0.5
+    },
+    {
+      "key": "field_property_sqft",
+      "label": "Square Footage",
+      "name": "property_sqft",
+      "type": "number",
+      "required": 0,
+      "wrapper": {
+        "width": "25"
+      },
+      "min": 0,
+      "step": 100
+    },
+    {
+      "key": "field_property_lot_size",
+      "label": "Lot Size",
+      "name": "property_lot_size",
+      "type": "text",
+      "instructions": "E.g., \"0.5 acres\" or \"2,500 sqft\"",
+      "required": 0,
+      "wrapper": {
+        "width": "25"
+      },
+      "placeholder": "0.5 acres"
+    },
+    {
+      "key": "field_property_year_built",
+      "label": "Year Built",
+      "name": "property_year_built",
+      "type": "number",
+      "required": 0,
+      "wrapper": {
+        "width": "100"
+      },
+      "min": 1800,
+      "step": 1
+    },
+    {
+      "key": "field_property_gallery",
+      "label": "Property Gallery",
+      "name": "property_gallery",
+      "type": "gallery",
+      "instructions": "Upload multiple photos of the property",
+      "required": 0,
+      "wrapper": {
+        "width": "100"
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "insert": "append",
+      "library": "all",
+      "min": 0,
+      "max": 0
+    },
+    {
+      "key": "field_property_features",
+      "label": "Property Features/Amenities",
+      "name": "property_features",
+      "type": "repeater",
+      "instructions": "Add features and amenities available in this property",
+      "required": 0,
+      "wrapper": {
+        "width": "100"
+      },
+      "collapsed": "field_amenity_name",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "+ Add Amenity",
+      "sub_fields": [
+        {
+          "key": "field_amenity_name",
+          "label": "Amenity Name",
+          "name": "name",
+          "type": "text",
+          "required": 0,
+          "wrapper": {
+            "width": "100"
+          },
+          "placeholder": "E.g., Swimming Pool, Garage, Fireplace"
+        }
+      ]
+    },
+    {
+      "key": "field_property_agent_name",
+      "label": "Agent/Contact Name",
+      "name": "agent_name",
+      "type": "text",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_property_agent_email",
+      "label": "Agent Email",
+      "name": "agent_email",
+      "type": "email",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      }
+    },
+    {
+      "key": "field_property_agent_phone",
+      "label": "Agent Phone",
+      "name": "agent_phone",
+      "type": "text",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "placeholder": "(555) 123-4567"
+    },
+    {
+      "key": "field_property_agent_link",
+      "label": "Agent Profile Link",
+      "name": "agent_link",
+      "type": "link",
+      "instructions": "Link to agent profile or website",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "properties"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": ""
+}

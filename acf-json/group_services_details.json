@@ -1,0 +1,154 @@
+{
+  "key": "group_services_details",
+  "title": "Service Details",
+  "fields": [
+    {
+      "key": "field_service_description",
+      "label": "Service Description",
+      "name": "service_description",
+      "type": "textarea",
+      "instructions": "Detailed description of the service",
+      "required": 0,
+      "wrapper": {
+        "width": "100",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_service_price",
+      "label": "Service Price",
+      "name": "service_price",
+      "type": "text",
+      "instructions": "e.g., $99.00 or \"Starting at $50\"",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "placeholder": "$0.00"
+    },
+    {
+      "key": "field_service_duration",
+      "label": "Duration/Timeline",
+      "name": "service_duration",
+      "type": "text",
+      "instructions": "e.g., \"2-3 weeks\" or \"Same day service\"",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "placeholder": "e.g., 2-3 weeks"
+    },
+    {
+      "key": "field_service_icon",
+      "label": "Service Icon/Image",
+      "name": "service_icon",
+      "type": "image",
+      "instructions": "Small icon or image (recommended: 200x200px)",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "return_format": "array",
+      "preview_size": "thumbnail",
+      "library": "all"
+    },
+    {
+      "key": "field_service_cta_text",
+      "label": "CTA Button Text",
+      "name": "service_cta_text",
+      "type": "text",
+      "instructions": "E.g., \"Get Started\", \"Learn More\", \"Book Now\"",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "placeholder": "Get Started"
+    },
+    {
+      "key": "field_service_cta_link",
+      "label": "CTA Button Link",
+      "name": "service_cta_link",
+      "type": "link",
+      "instructions": "Where the button points to",
+      "required": 0,
+      "wrapper": {
+        "width": "100"
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_service_features",
+      "label": "Service Features",
+      "name": "service_features",
+      "type": "repeater",
+      "instructions": "Add key features or benefits of this service",
+      "required": 0,
+      "wrapper": {
+        "width": "100"
+      },
+      "collapsed": "field_feature_title",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "+ Add Feature",
+      "sub_fields": [
+        {
+          "key": "field_feature_title",
+          "label": "Feature Title",
+          "name": "title",
+          "type": "text",
+          "required": 0,
+          "wrapper": {
+            "width": "50"
+          }
+        },
+        {
+          "key": "field_feature_description",
+          "label": "Feature Description",
+          "name": "description",
+          "type": "textarea",
+          "required": 0,
+          "wrapper": {
+            "width": "50"
+          },
+          "rows": 2
+        },
+        {
+          "key": "field_feature_icon",
+          "label": "Feature Icon (optional)",
+          "name": "icon",
+          "type": "text",
+          "instructions": "Dashicon name (e.g., \"dashicons-yes\", \"dashicons-star-filled\")",
+          "required": 0,
+          "wrapper": {
+            "width": "100"
+          },
+          "placeholder": "dashicons-yes"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "services"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": ""
+}
